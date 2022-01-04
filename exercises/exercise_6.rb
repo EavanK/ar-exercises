@@ -9,11 +9,11 @@ puts "Exercise 6"
 puts "----------"
 
 # Your code goes here ...
-class Store
+class Store < ActiveRecord::Base
   has_many :employees
 end
 
-class Employee
+class Employee < ActiveRecord::Base
   belongs_to :store
 end
 
